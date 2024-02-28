@@ -1,7 +1,732 @@
+<!doctype html>
 <html>
-	<head>
-	</head>
-	<body>
-		Homework 2 index.html here
-	</body>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: none !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right: 30px solid transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+html {
+	font-size: 19px;
+}
+
+html, body {
+	margin: auto;
+	background: #fefefe;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	font-family: "Vollkorn", Palatino, Times;
+	color: #333;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+#write {
+	max-width: 960px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	line-height: 1.53;
+	padding-top: 40px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1100px;
+	}
+}
+
+@media print {
+	html {
+		font-size: 13px;
+	}
+}
+
+/* Typography
+-------------------------------------------------------- */
+
+#write>h1:first-child,
+h1 {
+	margin-top: 1.6em;
+	font-weight: normal;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	margin-top:2em;
+	font-weight: normal;
+}
+
+h3 {
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 3em;
+}
+
+h1, 
+h2, 
+h3{
+	text-align: center;
+}
+
+h2:after{
+	border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+}
+
+h1+h2, h2+h3 {
+	margin-top: 0.83em;
+}
+
+p,
+.mathjax-block {
+	margin-top: 0;
+	-webkit-hypens: auto;
+	-moz-hypens: auto;
+	hyphens: auto;
+}
+ul {
+	list-style: square;
+	padding-left: 1.2em;
+}
+ol {
+	padding-left: 1.2em;
+}
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+}
+code,
+pre {
+	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-size: .9em;
+	background: white;
+}
+.md-fences{
+	margin-left: 1em;
+	padding-left: 1em;
+	border: 1px solid #ddd;
+	padding-bottom: 8px;
+	padding-top: 6px;
+	margin-bottom: 1.5em;
+}
+
+a {
+	color: #2484c1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+h1 a,
+h1 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+hr {
+	color: #ddd;
+	height: 1px;
+	margin: 2em 0;
+	border-top: solid 1px #ddd;
+	border-bottom: none;
+	border-left: 0;
+	border-right: 0;
+}
+.ty-table-edit {
+	background: #ededed;
+    padding-top: 4px;
+}
+table {
+	margin-bottom: 1.333333rem
+}
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.333333rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+table th {
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+
+.task-list{
+	padding:0;
+}
+
+.md-task-list-item {
+	padding-left: 1.6rem;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.33333333rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #fefefe;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+.md-tag {
+	color: inherit;
+	font: inherit;
+}
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+}
+#write pre.md-meta-block {
+	white-space: pre;
+	background: #f8f8f8;
+	border: 0px;
+	color: #999;
+	
+	width: 100vw;
+	max-width: calc(100% + 60px);
+	margin-left: -30px;
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+
+	margin-bottom: 2em;
+	margin-top: -1.3333333333333rem;
+	padding-top: 26px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
+	font-size: 0.9em;
+	font-size: 0.76em;
+	padding-left: 0;
+}
+.md-img-error.md-image>.md-meta{
+	vertical-align: bottom;
+}
+#write>h5.md-focus:before {
+	top: 2px;
+}
+
+.md-toc {
+	margin-top: 40px;
+}
+
+.md-toc-content {
+	padding-bottom: 20px;
+}
+
+.outline-expander:before {
+	color: inherit;
+	font-size: 14px;
+	top: auto;
+	content: "\f0da";
+	font-family: FontAwesome;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  	content: "\f0d7";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: #6A6A6A;
+}
+
+.html-for-mac #typora-sidebar {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
+}
+
+.typora-node .file-list-item-parent-loc, 
+.typora-node .file-list-item-time, 
+.typora-node .file-list-item-summary {
+	font-family: arial, sans-serif;
+}
+
+.md-task-list-item>input {
+    margin-left: -1.3em;
+    margin-top: calc(1rem - 12px);
+}
+
+.md-mathjax-midline {
+	background: #fafafa;
+}
+
+.md-fences .code-tooltip {
+	bottom: -2em !important;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						}
+</style><title>2024-2-24 cs 184284a computer graphics and imaging, spring 2024(1) 234237</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='cs-184284a-computer-graphics-and-imaging-spring-2024'><span>CS 184/284A: Computer Graphics and Imaging, Spring 2024</span></h1><h2 id='homework-2meshedit'><span>Homework 2：Meshedit</span></h2><h3 id='author-jian-yu-xiaoyu-zhu'><span>Author: Jian Yu</span>🐟<span>, Xiaoyu Zhu</span>🐷</h3><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" href="#cs-184284a-computer-graphics-and-imaging-spring-2024">CS 184/284A: Computer Graphics and Imaging, Spring 2024</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n2"><a class="md-toc-inner" href="#homework-2meshedit">Homework 2：Meshedit</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3"><a class="md-toc-inner" href="#author-jian-yu-xiaoyu-zhu">Author: Jian Yu🐟, Xiaoyu Zhu🐷</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n5"><a class="md-toc-inner" href="#overview">Overview</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n7"><a class="md-toc-inner" href="#section-i-bezier-curves-and-surfaces">Section I: Bezier Curves and Surfaces</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n8"><a class="md-toc-inner" href="#part-1-bezier-curves-with-1d-de-casteljau-subdivision">Part 1: Bezier Curves with 1D de Casteljau Subdivision</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n24"><a class="md-toc-inner" href="#part-2-bezier-surfaces-with-separable-1d-de-casteljau">Part 2: Bezier Surfaces with Separable 1D de Casteljau</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n38"><a class="md-toc-inner" href="#section-ii-triangle-meshes-and-half-edge-data-structure">Section II: Triangle Meshes and Half-Edge Data Structure</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n39"><a class="md-toc-inner" href="#part-3-area-weighted-vertex-normals">Part 3: Area-Weighted Vertex Normals</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n58"><a class="md-toc-inner" href="#part-4-edge-flip">Part 4: Edge Flip</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n87"><a class="md-toc-inner" href="#part-5-edge-split">Part 5: Edge Split</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n127"><a class="md-toc-inner" href="#part-6-loop-subdivision-for-mesh-upsampling">Part 6: Loop Subdivision for Mesh Upsampling</a></span></p></div><h3 id='overview'><span>Overview</span></h3><p><span>In this assignment, we delve into the intricacies of mesh editing, focusing on the implementation of Bezier curves and surfaces, triangle meshes, and half-edge data structures. Our work encompasses a range of tasks including the rendering of Bezier curves via 1D de Casteljau subdivision, manipulation of Bezier surfaces, and enhancements to mesh structure through operations such as vertex normalization, edge flipping, and edge splitting. Further, we explore mesh upsampling via Loop subdivision and tackle additional challenges such as handling boundary edges and implementing </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.061ex" height="2.398ex" role="img" focusable="false" viewBox="0 -949 1353 1060" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.251ex;"><defs><path id="MJX-8-TEX-N-221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path><path id="MJX-8-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msqrt"><g transform="translate(853,0)"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-8-TEX-N-33"></use></g></g><g data-mml-node="mo" transform="translate(0,89)"><use data-c="221A" xlink:href="#MJX-8-TEX-N-221A"></use></g><rect width="500" height="60" x="853" y="829"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></mjx-assistive-mml></mjx-container><script type="math/tex">\sqrt{3}</script><span> subdivision. Through a combination of theoretical understanding and practical application, we aim to demonstrate the power and versatility of mesh editing techniques in computer graphics.</span></p><h3 id='section-i-bezier-curves-and-surfaces'><span>Section I: Bezier Curves and Surfaces</span></h3><h4 id='part-1-bezier-curves-with-1d-de-casteljau-subdivision'><span>Part 1: Bezier Curves with 1D de Casteljau Subdivision</span></h4><p><span>Briefly explanation about de Casteljau&#39;s algorithm and our implemention</span></p><ul><li><p><span>De Casteljau&#39;s algorithm is a recursive method for evaluating Bezier curves. The key idea behind de Casteljau&#39;s algorithm is to iteratively interpolate between the control points to calculate new points, gradually reducing the problem until  a single point on the Bezier curve. By changing the parameter t from 0 to 1, this point will traverse the entire Bezier curve.</span></p></li><li><p><span>Our implemention: Our function </span><strong><span>evaluateStep</span></strong><span> takes a vector of 2D points as input and gives new control points on the next subdivion level as output using interpolation. More specificly, if there is only one point in vector control_points, directly return it; otherwise we traverse the input points in pairs and generate the new point by calculating (1 - t) * points[i] + t * points[i + 1]. Append each new point into vector2D new_points and return it.</span></p></li><li><p><span>Create a bzc file like below:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">6</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">0.100 0.750  0.200 0.150  0.400 0.800 &nbsp; 0.900 0.950 &nbsp; 1.150 0.450  1.400 0.900</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 51px;"></div><div class="CodeMirror-gutters" style="display: none; height: 51px;"></div></div></div></pre></li><li><p><span>Screeshot of each level:</span></p><center class="half">    <img src="img/initial.png" width="400"><img src="img/level1.png" width="400"><img src="img/level2.png" width="400"><img src="img/level3.png" width="400"> <img src="img/level4.png" width="400"><img src="img/level5.png" width="400"></center><p><span>Screenshot of slight different curve and differenrt parameter t. We choose 2 situations for representation, t close to 0 and close to 1.</span></p><center class="half">    <img src="img/initial.png" width="400"><img src="img/move.png" width="400"><img src="img/t_0.png" width="400"><img src="img/t_1.png" width="400"> </center></li></ul><p>&nbsp;</p><h4 id='part-2-bezier-surfaces-with-separable-1d-de-casteljau'><span>Part 2: Bezier Surfaces with Separable 1D de Casteljau</span></h4><p><span>Our implemention:</span></p><ul><li><span>There are three function for us, two helper function </span><strong><span>evaluateStep</span></strong><span> and  </span><strong><span>evaluate1D</span></strong><span> and a main function </span><strong><span>evaluate</span></strong><span>.</span></li><li><span>The </span><code>evaluateStep</code><span> function is almost the same with what we implimented in part 1, the only difference is changing the data type from Vector2D to Vector3D. This function gives new control points on the next subdivion level.</span></li><li><span>The </span><code>evaluate1D</code><span> function performs the 1D de Casteljau algorithm to evaluate a Bezier curve at a specific parameter </span><code>t</code><span>. The function enters a loop that calls evaluateStep function on the current </span><code>newPoints</code><span> and the parameter </span><code>t</code><span>, until </span><code>newPoints</code><span> is reduced to a single point.</span></li><li><span>The </span><code>evaluate</code><span> function is responsible for evaluating the Bezier surface at parameters </span><code>u</code><span> and </span><code>v</code><span>. It initializes an empty vector to store the final points calculated for each row of control points. Then it iterates over the rows of control points, applying </span><code>evaluate1D</code><span> for the parameter </span><code>u</code><span>, effectively collapsing each row into a single point. Next, taking all these points of each row as new cotrol point, using parameter v to collapses the points down to a single point representing the surface at </span><code>(u, v)</code><span> as evaluate1D does.</span></li></ul><p><span>In conclusion, the implemented functions, </span><code>evaluateStep</code><span> and </span><code>evaluate</code><span>, extend the 1D de Casteljau algorithm to handle surfaces by treating the evaluation in two separate steps, one for each parameter direction. </span></p><p><span>Result:</span></p><p><img src="img/teapot.png" alt="teapot" style="zoom:33%;" /></p><h3 id='section-ii-triangle-meshes-and-half-edge-data-structure'><span>Section II: Triangle Meshes and Half-Edge Data Structure</span></h3><h4 id='part-3-area-weighted-vertex-normals'><span>Part 3: Area-Weighted Vertex Normals</span></h4><p><span>Our implemention</span></p><ol start='' ><li><span>Initialize a zero vector </span><code>vertex_normal</code><span> to accumulate area-weighted normals.</span></li><li><span>Start iterating over each adjacent face of the vertex using the half-edge iterator </span><code>h</code><span>. Each halfedge can point to a face, and use h-&gt;twin()-&gt;next() can help us traverse to the next halfedge, pointing to the next face.</span></li><li><span>For each face, first use h-&gt;vetex()-&gt;position, h-&gt;next()-&gt;vetex()-&gt;position and h-&gt;next()-&gt;next()-&gt;vetex()-&gt;position to get position of three vertices. Then compute two vectors (representing two sides originating from the vertex) by subtract any pair of posistions, and calculate their cross product to obtain the normal vector. The result is a normal vector of the face and its magnitude represents twice the area of the face, hence this step effectively provides both the normal vector and its area weighting.</span></li><li><span>Accumulate the calculated normal vector to </span><code>vertex_normal</code><span>.</span></li><li><span>After iteration,  normalize the </span><code>vertex_normal</code><span> to get a unit vector.</span></li><li><span>Return the normalized </span><code>vertex_normal</code><span> as the vertex&#39;s area-weighted normal vector.</span></li></ol><p><span>Result:</span></p><center class="half">    <img src="img/q3tpt.png" width="400"><img src="img/q3tpt2.png" width="400"> </center><p>&nbsp;</p><p><span>The left the picture is the result before pressing &quot;Q&quot; and the right one is the result after pressing &quot;Q&quot;</span></p><h4 id='part-4-edge-flip'><span>Part 4: Edge Flip</span></h4><ul><li><span>Implemention</span></li></ul><p><span>The </span><code>flipEdge(EdgeIter e0)</code><span> function starts by checking if the given edge is a boundary edge, in which case it returns immediately without performing the flip. This check ensures that the operation does not attempt to modify the mesh in a way that would result in an invalid state.</span></p><p><span>Next we follow the instruction picture in </span><em><a href='http://15462.courses.cs.cmu.edu/fall2015content/misc/HalfedgeEdgeOpImplementationGuide.pdf'><span>Correctly Implementing Edge Flip / Split / Collapse</span></a></em><span> , shown as below:</span></p><center class="half">    <img src="img/flip_left.png" width="400"><img src="img/flip_right.png" width="400"> </center><p><span>There&#39;s no element is added or deleted in &quot;flip&quot; operation, so we first collect all necessary mesh elements and then reassign their pointers according to the new configuration.</span></p><p><span>Firstly, we identify and collect references to all elements involved in the operation:</span></p><ul><li><strong><span>Half-edges</span></strong><span>: </span><code>h0</code><span> through </span><code>h9</code><span>, where </span><code>h0</code><span> and </span><code>h3</code><span> are halves of the edge to be flipped, and the others are adjacent half-edges.</span></li><li><strong><span>Vertices</span></strong><span>: </span><code>v0</code><span> through </span><code>v3</code><span>, where </span><code>v0</code><span> and </span><code>v1</code><span> are the vertices of the edge to be flipped, and </span><code>v2</code><span> and </span><code>v3</code><span> are the opposite vertices in the adjoining faces.</span></li><li><strong><span>Edges</span></strong><span>: </span><code>e1</code><span> through </span><code>e4</code><span>, including the edge to be flipped (</span><code>e0</code><span>) and adjacent edges.</span></li><li><strong><span>Faces</span></strong><span>: </span><code>f0</code><span> and </span><code>f1</code><span>, the two faces adjacent to the edge.</span></li></ul><p><span>The reassignment of mesh elements involves updating the pointers of half-edges, vertices, edges, and faces to reflect the new connectivity after the edge flip:</span></p><ul><li><strong><span>Half-edges</span></strong><span>: Update the </span><code>next</code><span>, </span><code>twin</code><span>, </span><code>vertex</code><span>, </span><code>edge</code><span>, and </span><code>face</code><span> references for each half-edge involved in the operation, ensuring that the circular linkage among half-edges around each face and the twin relationships are correctly maintained.</span></li><li><strong><span>Vertices, Edges, Faces</span></strong><span>: Update the </span><code>halfedge</code><span> pointer for each vertex, edges and faces to point to one of the outgoing half-edges that remains valid after the flip.</span></li><li><strong><span>Our result:</span></strong></li></ul><center class="half">    <img src="img/q4-0.png" width="400"><img src="img/q4.png" width="400"> </center><p>&nbsp;</p><p><span>At first, when test on the teapot.dae file, everything runs smoothly, except for we can&#39;t use key &#39;Q&#39; to smooth the shade after we flip any edge. Therefore, we didn&#39;t pay enough attention. However, when we tested on the cube.dae file after implementing Task 6, we discovered the issue. After flipping, some edges of certain faces can&#39;t be choosen by mouse (e.g., the choosen one below), which means there only are two halfedges without the edge element. Further vestigation revealed that one of the two half-edges correctly pointed to its twin() counterpart, but the reverse direction presented a problem. </span></p><p><img src="img/flip_bug.png" alt="split" style="zoom:50%;" /></p><p><span>  So we checked the implemention instruction picture again and realized that we had only reassigned half-edges within the two faces, namely h1, h2, h4, and h5, assuming that the flip operation did not affect half-edges outside these faces, such as h6 to h9, and thus skipped them. However, in reality, the twin() of these half-edges changed and needed to be reassigned. Otherwise, it would result in the twin() of two half-edges of an edge not pointing to each other, causing issues with edge display. By reassigning the twin() of h6 to h9, we resolved this problem.</span></p><h4 id='part-5-edge-split'><span>Part 5: Edge Split</span></h4><ul><li><p><span>Implemention</span></p><p><span>The brief idea can be shown in this picture that we drew:</span></p><p><img src="img/q5draw.jpeg" referrerpolicy="no-referrer" alt="split"></p><p><span>The idea about our code:</span></p><ol start='' ><li><strong><span>Collect Elements</span></strong><span>: Similar to the boundary case, it collects all relevant half-edges, vertices, and faces around </span><code>e0</code><span>. This includes the half-edges and vertices directly connected to </span><code>e0</code><span> and those adjacent to the two faces sharing </span><code>e0</code><span>.</span></li><li><strong><span>Create New Elements</span></strong><span>: The function introduces a new vertex (</span><code>v4</code><span>) at the midpoint of </span><code>e0</code><span>, along with new half-edges (</span><code>h10</code><span> to </span><code>h15</code><span>), edges (</span><code>e5</code><span> to </span><code>e7</code><span>), and faces (</span><code>f2</code><span> and </span><code>f3</code><span>) to facilitate the updated mesh topology.</span></li><li><strong><span>Reassign Elements</span></strong><span>: This phase updates the connectivity of the mesh&#39;s elements, ensuring each half-edge points to the correct next half-edge, twin, vertex, edge, and face. The arrangement ensures that the mesh remains valid and consistent, with each element correctly pointing to its new neighbors and associated elements.</span></li></ol></li><li><p><strong><span>Result</span></strong></p></li></ul><p><span>	</span><span>Here is the result of a mesh before and after some edge splits(3x3 in the middle):</span></p><center class="half">    <img src="img/q5-1.png" width="400"><img src="img/q5-2.png" width="400"> </center><p><span>	</span><span>And here is the result of a mesh before and after a combination of both edge splits and edge flips:</span></p><p><span>	</span><span>(The original one, flip three edges, choose one edge, then split it)</span></p><center class="half">    <img src="img/q5-3-1.png" width="400"><img src="img/q5-3-2.png" width="400"> <img src="img/q5-3-3.png" width="400">  <img src="img/q5-3-4.png" width="400"></center><ul><li><strong><span>Eventful debugging journey</span></strong></li></ul><p><span>	</span><span>Luckly we finished this part smoothly:)</span></p><ul><li><p><strong><span>Extra credit: Support for boundary edges</span></strong></p><p><span>Here is the illustration for our implemention on boundary edges based on halfedge class.</span></p></li></ul><p><img src="img/boundary_split.png" referrerpolicy="no-referrer" alt="boundary_split"></p><p><span>  We want to split e0 by adding a new vertex on the middle, so there will be a new vertex called v3 and other new elements include new edges, halfedges and faces as above. So if the input edge -&gt;isBoundary() is True, we first get h0 by</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h0</span> <span class="cm-operator">=</span> <span class="cm-variable">e0</span><span class="cm-operator">-&gt;</span><span class="cm-variable">halfedge</span>();</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">h0</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isBoundary</span>()) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">h0</span> <span class="cm-operator">=</span> <span class="cm-variable">h0</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 103px;"></div><div class="CodeMirror-gutters" style="display: none; height: 103px;"></div></div></div></pre><p><span>  This code insures h0 is in the face f0, instead of on the boundary. Then we can follow h0 to collect elements as in task4 and 5. There is a little trick we use to collect h4 and h5 correctly:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h3</span> <span class="cm-operator">=</span> <span class="cm-variable">h0</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>();</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h4</span> <span class="cm-operator">=</span> <span class="cm-variable">h3</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">while</span> (<span class="cm-variable">h4</span><span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>() <span class="cm-operator">!=</span> <span class="cm-variable">h3</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">h4</span> <span class="cm-operator">=</span> <span class="cm-variable">h4</span><span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h5</span> <span class="cm-operator">=</span> <span class="cm-variable">h3</span><span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>();</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 154px;"></div><div class="CodeMirror-gutters" style="display: none; height: 154px;"></div></div></div></pre><p><span>  These are all elements affected by operation &quot;split&quot;. Next we create new vertex, halfedges, edges and face, update their pointer relationship according to the illustration and return v3 in the end.</span></p><ul><li><p><strong><span>Result: on beetle.dae</span></strong></p><center class="half">    <img src="img/split_before.png" width="400"><img src="img/split_after.png" width="400"> </center></li></ul><h4 id='part-6-loop-subdivision-for-mesh-upsampling'><span>Part 6: Loop Subdivision for Mesh Upsampling</span></h4><p><span>Implemention</span></p><ul><li><p><span>First, iterate all the vertices in the original mesh, set v-&gt;isNew to False, and pre-calculate positions for each old vertex using loop subdivision rules for old vertex, and save the result in v-&gt;newPosition. </span></p></li><li><p><span>Then, iterate all the edges in the original mesh, set e-&gt;isNew to False, and pre-calculate positions for each new vertex using loop subdivision rules for new vertex, and save the result in e-&gt;newPosition:</span></p></li><li><p><span>Next, split every edge in original mesh and mark the &quot;blue&quot; and &quot;black&quot; edge in the illusration in lecture for further flip operation. There are two tricks we use to implement this step:</span></p><ul><li><p><span>About edge iteration:</span></p><p><span>As split operation will add new element into mesh, the iterator might skip some elements if we first do split and then move to the next edge. So during the iteration, we use:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">EdgeIter</span> <span class="cm-variable">nextEdge</span> <span class="cm-operator">=</span> <span class="cm-variable">e</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">nextEdge</span><span class="cm-operator">++</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// split</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">e</span> <span class="cm-operator">=</span> <span class="cm-variable">nextEdge</span>;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 102px;"></div><div class="CodeMirror-gutters" style="display: none; height: 102px;"></div></div></div></pre><p><span>to avoid this problem.</span></p></li><li><p><span>Split</span></p><p><span>For each edge, we first check whether it connects two old vertices, if so , split it, then use the is_new to mark those blue edges so we can decide which to flip later. If not, which means there are two new vertice or a new and a old,  skip this edge. By doing so we can split all the old edges and distinguish between the blue and black edges at the same time:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">VertexIter</span> <span class="cm-variable">v1</span> <span class="cm-operator">=</span> <span class="cm-variable">e</span><span class="cm-operator">-&gt;</span><span class="cm-variable">halfedge</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">vertex</span>();</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">VertexIter</span> <span class="cm-variable">v2</span> <span class="cm-operator">=</span> <span class="cm-variable">e</span><span class="cm-operator">-&gt;</span><span class="cm-variable">halfedge</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">vertex</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">v1</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">v2</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">==</span> <span class="cm-atom">false</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">VertexIter</span> <span class="cm-variable">newVertex</span> <span class="cm-operator">=</span> <span class="cm-variable">mesh</span>.<span class="cm-variable">splitEdge</span>(<span class="cm-variable">e</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">newVertex</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">newVertex</span><span class="cm-operator">-&gt;</span><span class="cm-variable">newPosition</span> <span class="cm-operator">=</span> <span class="cm-variable">e</span><span class="cm-operator">-&gt;</span><span class="cm-variable">newPosition</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h</span> <span class="cm-operator">=</span> <span class="cm-variable">newVertex</span><span class="cm-operator">-&gt;</span><span class="cm-variable">halfedge</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable-3">int</span> <span class="cm-variable">i</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-keyword">do</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">edge</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">=</span> <span class="cm-variable">i</span> <span class="cm-operator">%</span> <span class="cm-number">2</span> <span class="cm-operator">==</span> <span class="cm-number">0</span> <span class="cm-operator">?</span> <span class="cm-atom">true</span> : <span class="cm-atom">false</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">h</span> <span class="cm-operator">=</span> <span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-variable">i</span><span class="cm-operator">++</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>} <span class="cm-keyword">while</span> (<span class="cm-variable">h</span> <span class="cm-operator">!=</span> <span class="cm-variable">newVertex</span><span class="cm-operator">-&gt;</span><span class="cm-variable">halfedge</span>());</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 366px;"></div><div class="CodeMirror-gutters" style="display: none; height: 366px;"></div></div></div></pre></li></ul></li><li><p><span>Flip</span></p><p><span>Iterate all edges, if e-&gt;isNew is True (which means it is a blue edge) and it connects a old vertex and a new one, flip it.</span></p></li><li><p><span>Set new position </span></p><p><span>Iterate all vertice, update all vertex positions.</span></p></li><li><p><span>How meshes behave after loop subdivision</span></p><center class="half">    <img src="img/cube.png" width="400"><img src="img/cube1.png" width="400"> </center><ul><li><p><span>Generally speaking,  Loop subdivision smooths the geometry of the mesh by adding more vertices and faces. This results in a mesh that appears smoother and more rounded compared to the original.</span></p></li><li><p><strong><span>Sharp Corners and Edges</span></strong><span>: Sharp corners and edges in the original mesh tend to become less pronounced after subdivision. The algorithm averages the positions of vertices, which naturally leads to a rounding effect at locations where there were sharp transitions in the surface.</span></p></li><li><p><span>Pre-split</span></p><p><span>We pre-split some edges like left illustraion, creating a vertex sourounded by faces that lie on the same plane to make sure no matter how many times we apply the upsample, this plane will still maintain its original state(see in the right picture).</span></p><center class="half">    <img src="img/cubepre.png" width="400"><img src="img/cubepre1.png" width="400"> </center></li></ul></li><li><p><span>Pre-process the cube to subdivide symmetrically</span></p><center class="half">   <img src="img/cubeiter0.png" width="200"> <img src="img/cubeiter1.png" width="200"><img src="img/cubeiter2.png" width="200"><img src="img/cubeiter3.png" width="200"></center><ul><li><p><span>The asymmetry observed in the cube after repeated subdivisions is due to the diagonals of each face of the cube not being symmetrical. By pre-splitting each diagonal to make them perfectly symmetrical before performing the upsampling operation, we can achieve symmetrical subdivision. This pre-processing step ensures that the resulting subdivided cube maintains symmetry by aligning the diagonals across all faces, thus counteracting the inherent asymmetry introduced by the subdivision process.</span></p><center class="half">   <img src="img/cubes1.png" width="200"> <img src="img/cubes2.png" width="200"><img src="img/cubes3.png" width="200"><img src="img/cubes4.png" width="200"></center></li></ul></li><li><p><span>Extra credit 1: support for boundary</span></p><ul><li><p><span>Implemention</span></p><p><span>There are two changes we modified in our code to support for boundary edges.</span></p><ul><li><span>Rules to compute new positions for old and new vertices are shown as above. So for old boundary vertex, we use 3/4 * original position + 1/8 </span><span>*</span><span> positions of two adjacent vertices:</span></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">v</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isBoundary</span>())</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">// find the first boundary halfedge</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h</span> <span class="cm-operator">=</span> <span class="cm-variable">v</span><span class="cm-operator">-&gt;</span><span class="cm-variable">halfedge</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span> (<span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isBoundary</span>() <span class="cm-operator">==</span> <span class="cm-atom">false</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">h</span> <span class="cm-operator">=</span> <span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">// find h's last boundary halfedge</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">HalfedgeIter</span> <span class="cm-variable">h_last</span> <span class="cm-operator">=</span> <span class="cm-variable">h</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">while</span> (<span class="cm-variable">h_last</span><span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>() <span class="cm-operator">!=</span> <span class="cm-variable">h</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">h_last</span> <span class="cm-operator">=</span> <span class="cm-variable">h_last</span><span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>();</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">v</span><span class="cm-operator">-&gt;</span><span class="cm-variable">newPosition</span> <span class="cm-operator">=</span> (<span class="cm-number">3.0</span> <span class="cm-operator">/</span> <span class="cm-number">4.0</span>) <span class="cm-operator">*</span> <span class="cm-variable">v</span><span class="cm-operator">-&gt;</span><span class="cm-variable">position</span> <span class="cm-operator">+</span> (<span class="cm-number">1.0</span> <span class="cm-operator">/</span> <span class="cm-number">8.0</span>) <span class="cm-operator">*</span> <span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">vertex</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">position</span> <span class="cm-operator">+</span> (<span class="cm-number">1.0</span> <span class="cm-operator">/</span> <span class="cm-number">8.0</span>) <span class="cm-operator">*</span> <span class="cm-variable">h_last</span><span class="cm-operator">-&gt;</span><span class="cm-variable">vertex</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">position</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 435px;"></div><div class="CodeMirror-gutters" style="display: none; height: 435px;"></div></div></div></pre><p><span>	</span><span>For new vertices, we use sum of 1/2 * old positions of two adjacent vertices:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">isBoundary</span>() <span class="cm-operator">||</span> <span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">isBoundary</span>())</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">e</span><span class="cm-operator">-&gt;</span><span class="cm-variable">newPosition</span> <span class="cm-operator">=</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> <span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">vertex</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">position</span> <span class="cm-operator">+</span> <span class="cm-number">0.5</span> <span class="cm-operator">*</span> <span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">vertex</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">position</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 102px;"></div><div class="CodeMirror-gutters" style="display: none; height: 102px;"></div></div></div></pre><ul><li><p><span>isNew</span></p><p><span>As the topology after splitting boundary edge is different from splitting a inside one, we have to change the isNew mark on three new edges instead of four:</span></p></li></ul><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10.8px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">edge</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">twin</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">edge</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">h</span><span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">next</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">edge</span>()<span class="cm-operator">-&gt;</span><span class="cm-variable">isNew</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom: 0px solid transparent; top: 77px;"></div><div class="CodeMirror-gutters" style="display: none; height: 77px;"></div></div></div></pre></li><li><p><span>Results</span></p><p><span>This is the screenshot before and after we apply operation &quot;upsample&quot; on beetle.dae:</span></p><center class="half">    <img src="img/beetle1.png" width="400"><img src="img/beetle2.png" width="400"> </center></li></ul></li><li><p><span>Extra credit 2: </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.061ex" height="2.398ex" role="img" focusable="false" viewBox="0 -949 1353 1060" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.251ex;"><defs><path id="MJX-8-TEX-N-221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path><path id="MJX-8-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msqrt"><g transform="translate(853,0)"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-8-TEX-N-33"></use></g></g><g data-mml-node="mo" transform="translate(0,89)"><use data-c="221A" xlink:href="#MJX-8-TEX-N-221A"></use></g><rect width="500" height="60" x="853" y="829"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></mjx-assistive-mml></mjx-container><script type="math/tex">\sqrt{3}</script><span>​ Subdivision</span></p><ul><li><p><span>Implemention</span></p><ul><li><p><span>Preparation: We first implement a function </span><em><span>VertexIter HalfedgeMesh::splitEdgefor3(FaceIter f)</span></em><span> as a substitution for </span><em><span>splitEdge</span></em><span> to support the operation of adding a vertex at the center of each face and split one face into three. Here is the illustration for splitEdgefor3:</span></p><p><img src="img/split3.jpeg" alt="boundary_split" style="zoom: 33%;" /></p></li><li><p><span>Step1: Compute new positions for all the vertices in the input mesh, using the sqrt(3) subdivision rule.</span></p></li><li><p><span>Step2: Iterate and split every face in the mesh.</span></p></li><li><p><span>Step3: Flip any new edge that connects two old vertices.</span></p></li><li><p><span>Step4: Copy the new vertex positions into final Vertex::position.</span></p></li></ul></li></ul></li><li><p><span>Result</span></p><p><span>Perform several iterations of </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.061ex" height="2.398ex" role="img" focusable="false" viewBox="0 -949 1353 1060" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.251ex;"><defs><path id="MJX-8-TEX-N-221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path><path id="MJX-8-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msqrt"><g transform="translate(853,0)"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-8-TEX-N-33"></use></g></g><g data-mml-node="mo" transform="translate(0,89)"><use data-c="221A" xlink:href="#MJX-8-TEX-N-221A"></use></g><rect width="500" height="60" x="853" y="829"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></mjx-assistive-mml></mjx-container><script type="math/tex">\sqrt{3}</script><span> subdivision on the cube:</span></p><center class="half">   <img src="img/cubes1.png" width="200"> <img src="img/cube31.png" width="200"><img src="img/cube32.png" width="200"><img src="img/cube33.png" width="200"></center><p><span>Perform </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="3.061ex" height="2.398ex" role="img" focusable="false" viewBox="0 -949 1353 1060" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.251ex;"><defs><path id="MJX-8-TEX-N-221A" d="M95 178Q89 178 81 186T72 200T103 230T169 280T207 309Q209 311 212 311H213Q219 311 227 294T281 177Q300 134 312 108L397 -77Q398 -77 501 136T707 565T814 786Q820 800 834 800Q841 800 846 794T853 782V776L620 293L385 -193Q381 -200 366 -200Q357 -200 354 -197Q352 -195 256 15L160 225L144 214Q129 202 113 190T95 178Z"></path><path id="MJX-8-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msqrt"><g transform="translate(853,0)"><g data-mml-node="mn"><use data-c="33" xlink:href="#MJX-8-TEX-N-33"></use></g></g><g data-mml-node="mo" transform="translate(0,89)"><use data-c="221A" xlink:href="#MJX-8-TEX-N-221A"></use></g><rect width="500" height="60" x="853" y="829"></rect></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></mjx-assistive-mml></mjx-container><script type="math/tex">\sqrt{3}</script><span> subdivision and Loop subdivision on teapot.dae for comparison:</span></p></li></ul><center class="half">    <img src="img/teapot_l.png" width="400"><img src="img/teapot_3.png" width="400"> </center></div></div>
+</body>
 </html>
