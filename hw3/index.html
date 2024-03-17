@@ -1,7 +1,1052 @@
+<!doctype html>
 <html>
-	<head>
-	</head>
-	<body>
-		Homework 3 index.html here
-	</body>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: medium !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+/* pt-serif-regular - latin */
+/* pt-serif-italic - latin */
+/* pt-serif-700 - latin */
+/* pt-serif-700italic - latin */
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+			max-width: 914px;
+	}
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.7em;
+	margin-top: calc(1rem - 12px);
+	-webkit-appearance: button;
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+	opacity: 1;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+#sidebar-loading-template, #sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
+.searchpanel-search-option-btn.active {
+	background: #777;
+	color: white;
+}
+
+.export-detail, .light .export-detail, 
+.light .export-item.active, 
+.light .export-items-list-control {
+	background: #e0e0e0;
+	border-radius: 2px;
+	font-weight: 700;
+	color: inherit
+}
+
+
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						} @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>hw3</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='cs-184-computer-graphics-and-imaging-spring-2024'><span>CS 184: Computer Graphics and Imaging, Spring 2024</span></h1><h1 id='project-3-1-path-tracer'><span>Project 3-1: Path Tracer</span></h1><h2 id='xiaoyu-zhu🐷-and-jian-yu'><span>Xiaoyu Zhu🐷 and Jian Yu</span>🐟</h2><h2 id='website-url-web'><span>Website URL: </span><a href='https://cal-cs184-student.github.io/hw-webpages-sp24-Jamil-Yu/hw3/index.html'><span>Web</span></a></h2><h2 id='overview'><span>Overview</span></h2><p><span>The project begins with the basics of ray generation and scene intersection, which include generating rays per pixel and efficiently detecting intersections with primitives like triangles and spheres. Then we focuses on enhancing rendering efficiency through the Bounding Volume Hierarchy (BVH) construction, optimizing the process by minimizing unnecessary ray-primitive intersection tests. After that, we delve into direct illumination, comparing uniform hemisphere sampling against importance sampling, and demonstrating the advantages of the latter in reducing noise and improving shadow accuracy. We also integrate global illumination, capturing the subtleties of indirect lighting and the beautiful complexities it introduces to the rendered scenes. Through adaptive sampling, we fine-tune their path tracer to allocate computational resources dynamically, striking a balance between image quality and rendering speed. This technique proves crucial for handling scenes with varying degrees of complexity, ensuring that more samples are used in areas with higher variance to reduce noise effectively.</span></p><h2 id='part-1-ray-generation-and-scene-intersection-20-points'><span>Part 1: Ray Generation and Scene Intersection (20 Points)</span></h2><h5 id='ray-generation-and-primitive-intersection-parts-of-the-rendering-pipeline'><span>Ray generation and primitive intersection parts of the rendering pipeline:</span></h5><p><span>To render color for each pixel (x, y) on the image, we first use </span><code>gridSampler-&gt;get_sample()</code><span> to generate </span><strong><span>ns_aa</span></strong><span> sample points for it. Then, we use the </span><code>generate_ray</code><span> function to cast a ray for each sample point, which begins at the camera position and goes through the sample point. After that, we use the </span><code>est_radiance_global_illumination</code><span> function to calculate the illumination along the ray. This includes calling </span><strong><span>bch-&gt;intersect</span></strong><span> to traverse all primitives in the scene and test whether they intersect with the ray within the valid range. If they do, we use normal shading to determine the color for this sample point; otherwise, we return the environmental light. By repeating this process for every sample point and averaging the results, we can determine the color that should be drawn for this pixel. After traversing every pixel on the image plane, we can finally render the entire image.&quot;</span></p><h5 id='triangle-intersection-algorithm'><span>Triangle intersection algorithm</span></h5><p><span>The triangle intersection algorithm determines if a ray intersects with a triangle by setting up and solving a linear system that models the intersection. Specifically, we follow the solution in discussion as below:</span></p><blockquote><p><span>Solution:</span>
+<span>Since the intersection is both along the ray and on the triangle, we have</span></p><p><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="41.529ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 18355.7 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-1-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path><path id="MJX-1-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-1-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-1-TEX-I-1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path id="MJX-1-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-1-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path><path id="MJX-1-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-1-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-1-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-1-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-1-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-1-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-1-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-1-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D442" xlink:href="#MJX-1-TEX-I-1D442"></use></g><g data-mml-node="mo" transform="translate(985.2,0)"><use data-c="2B" xlink:href="#MJX-1-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(1985.4,0)"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(2346.4,0)"><use data-c="1D437" xlink:href="#MJX-1-TEX-I-1D437"></use></g><g data-mml-node="mo" transform="translate(3452.2,0)"><use data-c="3D" xlink:href="#MJX-1-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(4508,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-1-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-1-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(5808.8,0)"><use data-c="2B" xlink:href="#MJX-1-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(6809,0)"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-1-TEX-I-1D44F"></use></g><g data-mml-node="mn" transform="translate(462,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(7674.6,0)"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"></use></g><g data-mml-node="msub" transform="translate(8063.6,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-1-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-1-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(9364.3,0)"><use data-c="2212" xlink:href="#MJX-1-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(10364.5,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-1-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-1-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(11443.1,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(12054.3,0)"><use data-c="2B" xlink:href="#MJX-1-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(13054.5,0)"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-1-TEX-I-1D44F"></use></g><g data-mml-node="mn" transform="translate(462,-150) scale(0.707)"><use data-c="32" xlink:href="#MJX-1-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(13920.1,0)"><use data-c="28" xlink:href="#MJX-1-TEX-N-28"></use></g><g data-mml-node="msub" transform="translate(14309.1,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-1-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="32" xlink:href="#MJX-1-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(15609.9,0)"><use data-c="2212" xlink:href="#MJX-1-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(16610.1,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-1-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-1-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(17688.7,0)"><use data-c="29" xlink:href="#MJX-1-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(18077.7,0)"><use data-c="2E" xlink:href="#MJX-1-TEX-N-2E"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>O</mi><mo>+</mo><mi>t</mi><mi>D</mi><mo>=</mo><msub><mi>P</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><mo stretchy="false">(</mo><msub><mi>P</mi><mn>1</mn></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub><mo stretchy="false">(</mo><msub><mi>P</mi><mn>2</mn></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>.</mo></math></mjx-assistive-mml></mjx-container><script type="math/tex">O + tD = P_0 + b_1(P_1 − P_0) + b_2(P_2 − P_0).</script></p><p><span>Thus,</span></p><p><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="43.289ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 19133.7 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-2-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path><path id="MJX-2-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-2-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path><path id="MJX-2-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-2-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-2-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-2-TEX-I-1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path id="MJX-2-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-2-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-2-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-2-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-2-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-2-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-2-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D442" xlink:href="#MJX-2-TEX-I-1D442"></use></g><g data-mml-node="mo" transform="translate(985.2,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(1985.4,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-2-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-2-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(3341.8,0)"><use data-c="3D" xlink:href="#MJX-2-TEX-N-3D"></use></g><g data-mml-node="mo" transform="translate(4397.6,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(5175.6,0)"><use data-c="1D461" xlink:href="#MJX-2-TEX-I-1D461"></use></g><g data-mml-node="mi" transform="translate(5536.6,0)"><use data-c="1D437" xlink:href="#MJX-2-TEX-I-1D437"></use></g><g data-mml-node="mo" transform="translate(6586.8,0)"><use data-c="2B" xlink:href="#MJX-2-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(7587,0)"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-2-TEX-I-1D44F"></use></g><g data-mml-node="mn" transform="translate(462,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-2-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(8452.6,0)"><use data-c="28" xlink:href="#MJX-2-TEX-N-28"></use></g><g data-mml-node="msub" transform="translate(8841.6,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-2-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-2-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(10142.3,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(11142.5,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-2-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-2-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(12221.1,0)"><use data-c="29" xlink:href="#MJX-2-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(12832.3,0)"><use data-c="2B" xlink:href="#MJX-2-TEX-N-2B"></use></g><g data-mml-node="msub" transform="translate(13832.5,0)"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-2-TEX-I-1D44F"></use></g><g data-mml-node="mn" transform="translate(462,-150) scale(0.707)"><use data-c="32" xlink:href="#MJX-2-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(14698.1,0)"><use data-c="28" xlink:href="#MJX-2-TEX-N-28"></use></g><g data-mml-node="msub" transform="translate(15087.1,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-2-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="32" xlink:href="#MJX-2-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(16387.9,0)"><use data-c="2212" xlink:href="#MJX-2-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(17388.1,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-2-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-2-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(18466.7,0)"><use data-c="29" xlink:href="#MJX-2-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(18855.7,0)"><use data-c="2E" xlink:href="#MJX-2-TEX-N-2E"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>O</mi><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mo>−</mo><mi>t</mi><mi>D</mi><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><mo stretchy="false">(</mo><msub><mi>P</mi><mn>1</mn></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub><mo stretchy="false">(</mo><msub><mi>P</mi><mn>2</mn></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>.</mo></math></mjx-assistive-mml></mjx-container><script type="math/tex">O − P_0 = −tD + b_1(P_1 − P_0) + b_2(P_2 − P_0). </script></p><p><span>Writing it in matrix form, we have</span></p><p><img src="build/matrix.png" alt="image-20240316170920532" style="zoom: 20%;" /></p><p><span>So, </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="40.145ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 17744.2 1000" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.566ex;"><defs><path id="MJX-3-TEX-I-1D440" d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z"></path><path id="MJX-3-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-3-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-3-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-3-TEX-I-1D437" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path id="MJX-3-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-3-TEX-I-1D443" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path><path id="MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-3-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-3-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path><path id="MJX-3-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-3-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path><path id="MJX-3-TEX-N-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D440" xlink:href="#MJX-3-TEX-I-1D440"></use></g><g data-mml-node="mo" transform="translate(1328.8,0)"><use data-c="3D" xlink:href="#MJX-3-TEX-N-3D"></use></g><g data-mml-node="mo" transform="translate(2384.6,0)"><use data-c="5B" xlink:href="#MJX-3-TEX-N-5B"></use></g><g data-mml-node="mo" transform="translate(2662.6,0)"><use data-c="2212" xlink:href="#MJX-3-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(3440.6,0)"><use data-c="1D437" xlink:href="#MJX-3-TEX-I-1D437"></use></g><g data-mml-node="mo" transform="translate(4268.6,0)"><use data-c="2C" xlink:href="#MJX-3-TEX-N-2C"></use></g><g data-mml-node="msub" transform="translate(4713.2,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-3-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="31" xlink:href="#MJX-3-TEX-N-31"></use></g></g><g data-mml-node="mo" transform="translate(6014,0)"><use data-c="2212" xlink:href="#MJX-3-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(7014.2,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-3-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-3-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(8092.8,0)"><use data-c="2C" xlink:href="#MJX-3-TEX-N-2C"></use></g><g data-mml-node="msub" transform="translate(8537.4,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-3-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="32" xlink:href="#MJX-3-TEX-N-32"></use></g></g><g data-mml-node="mo" transform="translate(9838.2,0)"><use data-c="2212" xlink:href="#MJX-3-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(10838.4,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-3-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-3-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(11917,0)"><use data-c="5D" xlink:href="#MJX-3-TEX-N-5D"></use></g><g data-mml-node="mo" transform="translate(12195,0)"><use data-c="2C" xlink:href="#MJX-3-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(12639.7,0)"><use data-c="1D44F" xlink:href="#MJX-3-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(13346.4,0)"><use data-c="3D" xlink:href="#MJX-3-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(14402.2,0)"><use data-c="1D442" xlink:href="#MJX-3-TEX-I-1D442"></use></g><g data-mml-node="mo" transform="translate(15387.4,0)"><use data-c="2212" xlink:href="#MJX-3-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(16387.7,0)"><g data-mml-node="mi"><use data-c="1D443" xlink:href="#MJX-3-TEX-I-1D443"></use></g><g data-mml-node="mn" transform="translate(675,-150) scale(0.707)"><use data-c="30" xlink:href="#MJX-3-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(17466.2,0)"><use data-c="2E" xlink:href="#MJX-3-TEX-N-2E"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>M</mi><mo>=</mo><mo stretchy="false">[</mo><mo>−</mo><mi>D</mi><mo>,</mo><msub><mi>P</mi><mn>1</mn></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo>,</mo><msub><mi>P</mi><mn>2</mn></msub><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo stretchy="false">]</mo><mo>,</mo><mi>b</mi><mo>=</mo><mi>O</mi><mo>−</mo><msub><mi>P</mi><mn>0</mn></msub><mo>.</mo></math></mjx-assistive-mml></mjx-container><script type="math/tex">M = [−D, P_1 − P_0, P_2 − P_0], b = O − P_0.</script></p></blockquote><p><span>So we construct vectors from the triangle&#39;s vertices and the ray&#39;s direction and origin, and use these to form a matrix equation. Solving this equation provides values for t (the distance along the ray to the intersection), and barycentric coordinates beta and gamma. The algorithm checks if t falls within the ray&#39;s bounds and if beta and gamma indicate that the intersection is inside the triangle.</span></p><p><span>For intersections, the algorithm updates either the ray&#39;s maximum extent or the intersection data with the distance, the intersecting object, material information, and a normalized normal vector calculated from the triangle&#39;s vertex normals, ensuring the intersection point lies within the triangle and facilitating subsequent rendering calculations.</span></p><h5 id='sphere-intersection-algorithm'><span>Sphere intersection algorithm:</span></h5><p><span>We use a geometric approach to detect whether a ray intersects with a sphere. It begins by calculating the coefficients of a quadratic equation (a, b, c) related to the direction of the ray and the vector from the sphere&#39;s center to the ray&#39;s origin. Then, it uses these coefficients to compute the discriminant, which determines if the ray intersects the sphere. If the discriminant is negative, the ray does not intersect the sphere. If the discriminant is non-negative, the algorithm calculates the distance t1, which is the length from the ray&#39;s origin to the intersection point. Lastly, we checks if this intersection point is within the valid range of the ray (comparing t1 with the ray&#39;s minimum and maximum ranges). </span></p><p><span>For the intersection detection function, it returns true if the ray intersects the sphere; for the function computing intersection details, it updates detailed information about the intersection, including the position of the intersection point, the normal vector at the intersection, and material information, which are essential for subsequent rendering processes.</span></p><h3 id='show-images'><span>Show images:</span></h3><figure class='table-figure'><table><thead><tr><th><img src="build/P1_CBCoil.png" referrerpolicy="no-referrer" alt="P3_2"></th><th><img src="build/P1_CBspheres.png" referrerpolicy="no-referrer" alt="P3_4"></th></tr></thead><tbody><tr><td><img src="build/P1_3.png" referrerpolicy="no-referrer" alt="P3_2"></td><td><img src="build/P1_4.png" referrerpolicy="no-referrer" alt="P3_4"></td></tr></tbody></table></figure><p>&nbsp;</p><h2 id='part-2-bounding-volume-hierarchy'><span>Part 2: Bounding Volume Hierarchy </span></h2><h3 id='walk-through-your-bvh-construction-algorithm-explain-the-heuristic-you-chose-for-picking-the-splitting-point'><span>Walk through your BVH construction algorithm. Explain the heuristic you chose for picking the splitting point.</span></h3><h4 id='algorithm-overview'><span>Algorithm Overview:</span></h4><p><span>The function </span><code>construct_bvh</code><span> builds the BVH by recursively dividing the set of primitives into smaller subsets until the size of a subset is less than or equal to a specified maximum leaf size. Initially, it checks if the current set of primitives is small enough to fit into a leaf node. If so, it creates a leaf node that encompasses all these primitives within a bounding box. If the set is too large, it calculates the overall bounding box for the current set and determines the longest axis of the box. The set of primitives is then sorted along this axis based on the centroids of their bounding boxes. This sorted set is split into two halves, and the function recursively calls itself for each half, creating a new node in the BVH for each subset. Each node stores pointers to its left and right children, effectively dividing the primitives into a hierarchical structure of nested bounding boxes.</span></p><h4 id='heuristic-function'><span>Heuristic function:</span></h4><p><span>In this method, the heuristic is based on the spatial distribution of the primitives&#39; centroids. By identifying the longest axis of the overall bounding box, the algorithm chooses an axis along which the primitives are most spread out. This approach aims to create a more balanced tree by ensuring that each recursive split divides the primitives into groups with roughly equal numbers and minimizes the overlap between bounding boxes of child nodes. The decision to sort the primitives based on their centroids&#39; positions along the chosen axis and then splitting the sorted list into two halves is a simple yet effective heuristic that balances the tree and potentially reduces the number of bounding box intersection tests needed during ray tracing.</span></p><h3 id='show-images-2'><span>Show images:</span></h3><h3></h3><figure class='table-figure'><table><thead><tr><th><img src="build/P2_1.png" referrerpolicy="no-referrer" alt="P3_2"></th><th><img src="build/P2_2.png" referrerpolicy="no-referrer" alt="P3_4"></th></tr></thead><tbody><tr><td><img src="build/P2_3.png" referrerpolicy="no-referrer" alt="P3_2"></td><td><img src="build/P2_4.png" referrerpolicy="no-referrer" alt="P3_4"></td></tr></tbody></table></figure><h3 id='comparison-on-rendering-times'><span>Comparison on rendering times</span></h3><p><img src="build/P2_compare.png" alt="P2_compare" style="zoom:25%;" /></p><p><span>The drastic difference in rendering times clearly demonstrates the effectiveness of BVH acceleration in reducing the time required to render moderately complex geometries. Taking cow.dae as an example, we have to test about 1710 times for intersection for each ray, while using BVH the number decents to 3, because if the ray miss the bounding box, we can avoid further intersection test for object in them. In summary, BVH greatly optimizes the process by efficiently organizing the geometric data, which reduces the number of calculations needed to determine ray-primitive intersections.</span></p><h2 id='part-3-direct-illumination'><span>Part 3: Direct Illumination </span></h2><h3 id='walk-through-both-implementations-of-the-direct-lighting-function'><span>Walk through both implementations of the direct lighting function.</span></h3><h4 id='implemention-of-uniform-hemisphere-sampling'><span>Implemention of Uniform Hemisphere Sampling</span></h4><p><span>The </span><code>estimate_direct_lighting_hemisphere</code><span> function in the path tracing implementation estimates the direct light hitting an intersection point by uniformly sampling directions over the hemisphere oriented by the surface normal. The steps are as follows:</span></p><ol start='' ><li><p><span>Construct a local coordinate system at the intersection point, aligned with the normal.</span></p></li><li><p><span>Transform the incoming ray to this local coordinate system.</span></p></li><li><p><span>Loop over a number of samples, generating uniform directions over the hemisphere.</span></p><p><code>Vector3D w_in = hemisphereSampler-&gt;get_sample();</code></p></li><li><p><span>For each sample, transform the direction back to world space and shoot a shadow ray towards the light.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Vector3D</span> <span class="cm-variable">wi</span> <span class="cm-operator">=</span> <span class="cm-variable">o2w</span> <span class="cm-operator">*</span> <span class="cm-variable">w_in</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Ray</span> <span class="cm-variable">out_ray</span> <span class="cm-operator">=</span> <span class="cm-variable">Ray</span>(<span class="cm-variable">hit_p</span>, <span class="cm-variable">wi</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">out_ray</span>.<span class="cm-variable">min_t</span> <span class="cm-operator">=</span> <span class="cm-variable">EPS_D</span>;</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 72px;"></div><div class="CodeMirror-gutters" style="display: none; height: 72px;"></div></div></div></pre></li><li><p><span>If the shadow ray hits a light source, calculate the light&#39;s contribution to the intersection point, considering the material&#39;s properties and the angle between the incoming light direction and the surface normal.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">Intersection</span> <span class="cm-variable">out_isect</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">bvh</span><span class="cm-operator">-&gt;</span><span class="cm-variable">intersect</span>(<span class="cm-variable">out_ray</span>, <span class="cm-operator">&amp;</span><span class="cm-variable">out_isect</span>))</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">if</span> (<span class="cm-variable">out_isect</span>.<span class="cm-variable">bsdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">get_emission</span>().<span class="cm-variable">norm</span>() <span class="cm-operator">&gt;</span> <span class="cm-number">0</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">L_out_sum</span> <span class="cm-operator">+=</span> <span class="cm-variable">out_isect</span>.<span class="cm-variable">bsdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">get_emission</span>() <span class="cm-operator">*</span> <span class="cm-variable">isect</span>.<span class="cm-variable">bsdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">f</span>(<span class="cm-variable">w_out</span>, <span class="cm-variable">w_in</span>) <span class="cm-operator">*</span> <span class="cm-variable">dot</span>(<span class="cm-variable">wi</span>, <span class="cm-variable">isect</span>.<span class="cm-variable">n</span>) <span class="cm-operator">*</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-variable">PI</span> <span class="cm-operator">/</span> <span class="cm-variable">num_samples</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 216px;"></div><div class="CodeMirror-gutters" style="display: none; height: 216px;"></div></div></div></pre></li><li><p><span>Accumulate the contributions for each sample to approximate the total direct lighting.</span></p></li></ol><ul><li><p><span>Implemention of Importance Sampling</span></p></li></ul><p><span>The </span><code>estimate_direct_lighting_importance</code><span> function computes the direct lighting at an intersection point by importance sampling from light sources, rather than sampling uniformly over a hemisphere. </span></p><ol start='' ><li><p><span>A coordinate system is established at the intersection point with the normal (</span><code>isect.n</code><span>) aligned with the Z-axis.</span></p></li><li><p><span>The incoming ray (</span><code>r</code><span>) is transformed to this local coordinate system to determine the outgoing direction (</span><code>w_out</code><span>) at the intersection point.</span></p></li><li><p><span>The function iterates over each light source in the scene.</span></p><ul><li><p><span>For delta lights, a single sample is taken because these lights are treated as point sources with no area. The light&#39;s contribution is calculated if the shadow ray from the intersection point to the light does not hit any other geometry.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">light</span><span class="cm-operator">-&gt;</span><span class="cm-variable">is_delta_light</span>() <span class="cm-operator">==</span> <span class="cm-atom">true</span>)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">Vector3D</span> <span class="cm-variable">radians</span> <span class="cm-operator">=</span> <span class="cm-variable">light</span><span class="cm-operator">-&gt;</span><span class="cm-variable">sample_L</span>(<span class="cm-variable">hit_p</span>, <span class="cm-operator">&amp;</span><span class="cm-variable">wi</span>, <span class="cm-operator">&amp;</span><span class="cm-variable">distToLight</span>, <span class="cm-operator">&amp;</span><span class="cm-variable">pdf</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">Vector3D</span> <span class="cm-variable">w_in</span> <span class="cm-operator">=</span> <span class="cm-variable">w2o</span> <span class="cm-operator">*</span> (<span class="cm-variable">wi</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">Ray</span> <span class="cm-variable">shadowRay</span>(<span class="cm-variable">hit_p</span>, <span class="cm-variable">wi</span>, <span class="cm-variable">distToLight</span> <span class="cm-operator">-</span> <span class="cm-variable">EPS_F</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">shadowRay</span>.<span class="cm-variable">min_t</span> <span class="cm-operator">=</span> <span class="cm-variable">EPS_F</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">Intersection</span> <span class="cm-variable">shadowIsect</span>; <span class="cm-comment">// 计算交点</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable-3">bool</span> <span class="cm-variable">intersects</span> <span class="cm-operator">=</span> <span class="cm-variable">bvh</span><span class="cm-operator">-&gt;</span><span class="cm-variable">intersect</span>(<span class="cm-variable">shadowRay</span>, <span class="cm-operator">&amp;</span><span class="cm-variable">shadowIsect</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">if</span> (<span class="cm-operator">!</span><span class="cm-variable">intersects</span>)</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">Vector3D</span> <span class="cm-variable">f</span> <span class="cm-operator">=</span> <span class="cm-variable">isect</span>.<span class="cm-variable">bsdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">f</span>(<span class="cm-variable">w_out</span>, <span class="cm-variable">w_in</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">L_out_sum</span> <span class="cm-operator">+=</span> <span class="cm-variable">f</span> <span class="cm-operator">*</span> <span class="cm-variable">radians</span> <span class="cm-operator">*</span> <span class="cm-variable">dot</span>(<span class="cm-variable">wi</span>, <span class="cm-variable">isect</span>.<span class="cm-variable">n</span>) <span class="cm-operator">/</span> <span class="cm-variable">pdf</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 336px;"></div><div class="CodeMirror-gutters" style="display: none; height: 336px;"></div></div></div></pre></li><li><p><span>For area lights, the only difference is that we shoule sample multiple times for per light source. </span></p></li></ul></li><li><p><span>For every unobstructed light sample, the function calculates the lighting contribution based on the light&#39;s radiance, the surface&#39;s material properties (BSDF), the cosine of the angle between the incoming light direction and the normal, and the inverse of the probability density function (</span><code>pdf</code><span>) of the sample.</span></p></li><li><p><span>Contributions from all the unblocked samples are accumulated to estimate the total direct lighting (</span><code>L_out_sum</code><span>).</span></p></li></ol><h3 id='show-some-images-with-both-rendering-methods'><span>Show some images with both rendering methods:</span></h3><figure class='table-figure'><table><thead><tr><th><strong><span>Uniform Hemisphere Sampling</span></strong></th><th><strong><span>Light Sampling</span></strong></th></tr></thead><tbody><tr><td><img src="build/P3_1.png" referrerpolicy="no-referrer" alt="P3_1"><span>bunny.dae</span></td><td><img src="build/P3_3.png" referrerpolicy="no-referrer" alt="P3_4"><span>bunny.dae</span></td></tr><tr><td><img src="build/P3_2.png" referrerpolicy="no-referrer" alt="P3_2"><span>CBspheres_lambertian.dae</span></td><td><img src="build/P3_4.png" referrerpolicy="no-referrer" alt="P3_4"><span>CBspheres_lambertian.dae</span></td></tr></tbody></table></figure><h3 id='one-particular-scene-with-different-light-rays-using-light-sampling'><span>one particular scene with different light rays using light sampling:</span></h3><figure class='table-figure'><table><thead><tr><th><img src="build/P3_5.png" referrerpolicy="no-referrer" alt="P3_2"><span>1 Light Ray (example1.dae)</span></th><th><img src="build/P3_6.png" referrerpolicy="no-referrer" alt="P3_2"><span>4 Light Rays (example1.dae)</span></th></tr></thead><tbody><tr><td><img src="build/P3_7.png" referrerpolicy="no-referrer" alt="P3_2"><span>16 Light Rays (example1.dae)</span></td><td><img src="build/P3_8.png" referrerpolicy="no-referrer" alt="P3_2"><span>64 Light Rays (example1.dae)</span></td></tr></tbody></table></figure><h4 id='analysis'><span>Analysis: </span></h4><p><span>the number of light rays sampled per pixel (-l flag) greatly influences the noise level and smoothness of soft shadows. With only one light ray per pixel (-l 1), shadows tend to be noisy and exhibit stark contrasts because the single sample provides a limited and potentially unrepresentative estimation of the actual light distribution. As the number of rays increases to 4, 16, and then 64, each pixel receives a more statistically robust estimation of lighting, which averages out inconsistencies and reduces noise. Consequently, soft shadows transition more smoothly between light and dark regions, simulating the effect of light diffusing across the edges of objects. This smoothing effect occurs because increasing the ray count leads to a better approximation of the light&#39;s area and intensity variations, offering a more realistic representation of how light interacts with surfaces in the scene.</span></p><h3 id='compare-the-results-between-two-sampling-method'><span>Compare the results between two sampling method</span></h3><p><span>Uniform hemisphere sampling distributes rays evenly across the hemisphere above the intersection point, often leading to higher noise levels, especially in shadowed or indirectly lit areas, because many sampled rays may not contribute significant lighting information. In contrast, importance sampling focuses rays towards the light sources, taking into account their size, shape, and intensity distribution. This approach tends to produce images with lower noise and more accurate soft shadows, as the samples are more likely to represent meaningful light contributions. While uniform sampling is simpler and may be more efficient for scenes with diffuse lighting from many directions, importance sampling is generally preferred for scenes with distinct light sources, as it provides a better approximation of how light actually illuminates the scene.</span></p><h2 id='part-4-global-illumination'><span>Part 4: Global Illumination</span></h2><h3 id='implementation-of-the-indirect-lighting-function'><span>Implementation of the indirect lighting function:</span></h3><h5 id='atleastonebounce'><span>at_least_one_bounce:</span></h5><p><span>In this function, we only trace ray bounce ray.depth times, without regarding whether isAccu</span></p><ul><li><p><span>Setting Up Coordinate Systems</span></p></li><li><p><span>Computing Intersection Point and Outgoing Direction (like what we do in task3)</span></p></li></ul><ul><li><p><span>Base case: if max depth =1 or current depth for the ray we are tracing is 1, we should return one bounce radiance using direct illumination function implemented in task3.</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">max_ray_depth</span> <span class="cm-operator">==</span> <span class="cm-number">1</span> <span class="cm-operator">||</span> <span class="cm-variable">r</span>.<span class="cm-variable">depth</span> <span class="cm-operator">==</span> <span class="cm-number">1</span>)</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">{</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable">one_bounce_radiance</span>(<span class="cm-variable">r</span>, <span class="cm-variable">isect</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 96px;"></div><div class="CodeMirror-gutters" style="display: none; height: 96px;"></div></div></div></pre></li><li><p><span>Recursion:</span></p><p><span>For each intersection, sample ns_diff times to estimate income radiance. With rassian roulette turned on, we first flip a coin when r.depth != max_ray_depth, as we want to use this check to make sure each ray will bounce at least once before disappear.  So we will cast a new ray with ray.depth equals to ole depth-1 with 75% chances, then test whether it will intersect with any primitives in the scene, if so, return:</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="c++"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="c++"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.75px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">L_out</span> <span class="cm-operator">=</span> (<span class="cm-number">1</span><span class="cm-operator">/</span><span class="cm-number">0.75</span>)<span class="cm-operator">*</span><span class="cm-variable">f</span> <span class="cm-operator">*</span> <span class="cm-variable">at_least_one_bounce_radiance</span>(<span class="cm-variable">ray</span>, <span class="cm-variable">new_isect</span>) <span class="cm-operator">*</span> <span class="cm-variable">dot</span>(<span class="cm-variable">o2w</span> <span class="cm-operator">*</span> <span class="cm-variable">w_in</span>, <span class="cm-variable">isect</span>.<span class="cm-variable">n</span>) <span class="cm-operator">/</span> (<span class="cm-variable">ns_diff</span> <span class="cm-operator">*</span> <span class="cm-variable">pdf</span>);</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 48px;"></div><div class="CodeMirror-gutters" style="display: none; height: 48px;"></div></div></div></pre><p><span>Else we will just return Vector3D(0, 0, 0), which stop tracing and return black.</span></p></li></ul><h5 id='estradianceglobalillumination'><span>est_radiance_global_illumination</span></h5><ol><li><p><span>Initialize variables: </span><code>isect</code><span> to store intersection information and </span><code>L_out</code><span> to store the outgoing radiance, initially set to black.</span></p></li><li><p><span>Check if the incoming ray intersects with any geometry in the scene using a Bounding Volume Hierarchy (BVH). If there&#39;s no intersection, return the radiance sampled from the environment light if available, otherwise return black.</span></p></li><li><p><span>If intersections are found: a. If the option to accumulate bounces is enabled (</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">isAccumBounces</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 24px;"></div><div class="CodeMirror-gutters" style="display: none; height: 24px;"></div></div></div></pre><p><span>), compute radiance contributions from zero bounce and at least one bounce scenarios for multiple depths (</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 10px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">max_ray_depth</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 24px;"></div><div class="CodeMirror-gutters" style="display: none; height: 24px;"></div></div></div></pre><p><span>). This considers direct and indirect illumination. b. If not accumulating bounces, handle radiance computation based on the depth of the ray:</span></p><ul><li><p><span>For rays at depth 1, compute radiance contributions from zero bounce and one bounce scenarios.</span></p></li><li><p><span>For rays at depth 0, compute radiance contribution only from zero bounce.</span></p></li><li><p><span>For other depths, compute radiance contribution from at least one bounce.</span></p></li></ul></li><li><p><span>Return the computed radiance </span><code>L_out</code><span>.</span></p></li></ol><h3 id='some-images-rendered-with-global-illumination'><span>Some images rendered with global illumination.</span></h3><figure class='table-figure'><table><thead><tr><th><img src="build/P4_3.png" referrerpolicy="no-referrer" alt="P4_3"><span>CBspheres_lambertian.dae</span></th><th><img src="build/P4_4.png" referrerpolicy="no-referrer" alt="P4_4"><span>CBbunny.dae                             </span></th></tr></thead><tbody><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><h3 id='comparison-between-only-direct-and-only-indirect-illumination'><span>Comparison between only direct and only indirect illumination.</span></h3><figure class='table-figure'><table><thead><tr><th><img src="build/P4_1.png" referrerpolicy="no-referrer" alt="P4_1"><span>Only direct illumination       </span></th><th><img src="build/P4_2.png" referrerpolicy="no-referrer" alt="P4_2"><span>Only indirect illumination </span></th></tr></thead><tbody><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p><span>In the realm of direct illumination, the visuals we perceive are shaped by the original light emission and its singular interactions with the scene—no subsequent bounces of light are accounted for. This yields a visual composition with starkly defined shadows and distinct contrast, given that illumination is confined to surfaces with unobstructed paths to the light source, leaving other areas shrouded in darkness. Turning to indirect illumination,the focus shifts to the subsequent journey of light as it reflects within the environment. With indirect illumination, the bunny can reflect colors of two walls and the ceiling become brighter because of the bouncing rays.</span></p><h3 id='render-the-mth-bounce-of-light-with-maxraydepth-set-to-0-1-2-3-4-and-5-and-isaccumbouncesfalse'><span>Render the mth bounce of light with </span><code>max_ray_depth</code><span> set to 0, 1, 2, 3, 4, and 5, and </span><code>isAccumBounces=false</code><span>.</span></h3><figure class='table-figure'><table><thead><tr><th style='text-align:left;' ><img src="build/P4_5.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 0</span></th><th style='text-align:center;' ><img src="build/P4_6.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 1</span></th></tr></thead><tbody><tr><td style='text-align:left;' ><img src="build/P4_7.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 2</span></td><td style='text-align:center;' ><img src="build/P4_8.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 3</span></td></tr><tr><td style='text-align:left;' ><img src="build/P4_9.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 4</span></td><td style='text-align:center;' ><img src="build/P4_10.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 5</span></td></tr></tbody></table></figure><h4 id='explaination'><span>Explaination</span></h4><p><span>The 2nd bounce of light offers the greatest contribution to indirect illumination, comprising rays that have reflected once off the walls or other surfaces and then illuminate the ceiling and shadowed areas, resulting in a brighter appearance under the bunny and on the ceiling. The 3rd bounce of light is significantly weaker due to the loss of energy with each reflection, leading to an overall darker image. In the image from the 3rd bounce, the bunny appears darker while the background is brighter because the light that initially illuminated the rabbit on the 2nd bounce has reflected back onto the walls. The light from adjacent bounces complements each other, creating a more realistic rendering with vivid illumination and detailed shadows.</span></p><h3 id='compare-rendered-views-with-maxraydepth-set-to-0-1-2-3-4-and-5-without-rassian-roulette'><span>Compare rendered views with </span><code>max_ray_depth</code><span> set to 0, 1, 2, 3, 4, and 5 (without rassian roulette)</span></h3><figure class='table-figure'><table><thead><tr><th style='text-align:left;' ><img src="build/P4_11.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 0</span></th><th style='text-align:center;' ><img src="build/P4_12.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 1</span></th></tr></thead><tbody><tr><td style='text-align:left;' ><img src="build/P4_13.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 2</span></td><td style='text-align:center;' ><img src="build/P4_14.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 3</span></td></tr><tr><td style='text-align:left;' ><img src="build/P4_15.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 4</span></td><td style='text-align:center;' ><img src="build/P4_16.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 5</span></td></tr></tbody></table></figure><h4 id='comparison'><span>Comparison:</span></h4><p><span>As </span><code>max_ray_depth</code><span> increases from 0 to 5 in a ray-traced scene, the rendered image transitions from displaying only direct illumination from light sources to incrementally incorporating more complex lighting effects such as reflections, refractions, and diffused ligh. With </span><code>max_ray_depth = 1</code><span>, some shadows and possibly very limited reflections appear. At </span><code>max_ray_depth = 2</code><span>, we see the first level of indirect illumination, where light has bounced once off surfaces. </span><code>max_ray_depth = 3</code><span> adds a second bounce, revealing subtler indirect lighting and color bleeding. With </span><code>max_ray_depth</code><span> set to 4 and 5, the scene quickly converged, meaning that the visual differences between these two settings became negligible. This convergence occurs because the BSDF  includes reflection coefficients that cause an exponential decay in energy as the path length increases. Each subsequent bounce contributes less to the overall lighting due to this energy loss, and after several bounces, the additional contribution of light becomes so small that it is imperceptible to the human eye. </span></p><h3 id='compare-rendered-views-with-maxraydepth-set-to-0-1-2-3-and-100'><span>Compare rendered views with max_ray_depth set to 0, 1, 2, 3, and 100.</span></h3><figure class='table-figure'><table><thead><tr><th style='text-align:left;' ><img src="build/P4_17.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 0</span></th><th style='text-align:center;' ><img src="build/P4_18.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 1</span></th></tr></thead><tbody><tr><td style='text-align:left;' ><img src="build/P4_19.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 2</span></td><td style='text-align:center;' ><img src="build/P4_20.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 3</span></td></tr><tr><td style='text-align:left;' ><img src="build/P4_21.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 4</span></td><td style='text-align:center;' ><img src="build/P4_22.png" referrerpolicy="no-referrer" alt="P4_5"><span>max_ray_depth = 100</span></td></tr></tbody></table></figure><p><span>Using rassian roulette gives similar result to above analysis. There&#39;s also one more reason to the quick convergence: during process of ray tracing, we terminate a ray with 25% chances, so as the length of the light paths increases, the probability of the paths being terminated grows exponentially, hence the contribution of longer paths is approximately zero. Furthermore, employing Russian roulette provides an unbiased estimate of the lighting, circumventing the issue of the scene being too dark due to a limited number of traced levels.</span></p><h3 id='pick-one-scene-and-compare-rendered-views-with-various-sample-per-pixel-rates-including-at-least-1-2-4-8-16-64-and-1024-use-4-light-rays'><span>Pick one scene and compare rendered views with various sample-per-pixel rates, including at least 1, 2, 4, 8, 16, 64, and 1024. Use 4 light rays.</span></h3><figure class='table-figure'><table><thead><tr><th><img src="build/P4_23.png" referrerpolicy="no-referrer" alt="img"><span>1 sample per pixel </span></th><th><img src="build/P4_24.png" referrerpolicy="no-referrer" alt="img"><span>2 samples per pixel </span></th></tr></thead><tbody><tr><td><img src="build/P4_25.png" referrerpolicy="no-referrer" alt="img"><span>4 samples per pixel </span></td><td><img src="build/P4_26.png" referrerpolicy="no-referrer" alt="img"><span>8 samples per pixel</span></td></tr><tr><td><img src="build/P4_28.png" referrerpolicy="no-referrer" alt="img"><span>16 samples per pixel </span></td><td><img src="build/P4_27.png" referrerpolicy="no-referrer" alt="img"><span>64 samples per pixel </span></td></tr><tr><td><img src="build/P4_21.png" referrerpolicy="no-referrer" alt="img"><span>1024 samples per pixel</span></td><td>&nbsp;</td></tr></tbody></table></figure><p><span>With each increase in the sample-per-pixel rate, the rendering algorithm has more information to work with, allowing it to more accurately simulate the complex interplay of light within the scene. This results in progressively higher image quality, though at the cost of increased computational time. The choice of sampling rate thus represents a trade-off between rendering quality and efficiency.</span></p><ol><li><p><strong><span>At 1 sample per pixel</span></strong><span>, the image is likely to exhibit a high level of noise, with the details appearing grainy and undefined. This low sampling rate is insufficient for accurately capturing the complexity of light interactions in the scene.</span></p></li><li><p><strong><span>At 2 samples per pixel</span></strong><span>, while still noisy, the image begins to show a reduction in variance compared to just 1 sample. </span></p></li><li><p><strong><span>At 4 samples per pixel</span></strong><span>, the noise continues to decrease, and more details emerge. However, the image might still display noticeable noise, especially in shadowed areas and ceilings.</span></p></li><li><p><strong><span>At 8 and 16 samples per pixel</span></strong><span>, the quality improves noticeably with each increase. Noise is further reduced, and the rendering captures finer details and subtleties in lighting and texture. </span></p></li><li><p><strong><span>At 64 samples per pixel</span></strong><span>, the image quality significantly increases, showing much smoother gradients and sharply reduced noise. </span></p></li><li><p><strong><span>At 1024 samples per pixel</span></strong><span>, the image achieves a very high level of detail with minimal noise. </span></p></li></ol><h2 id='part-5-adaptive-sampling-20-points'><span>Part 5: Adaptive Sampling (20 Points)</span></h2><h4 id='explain'><span>Explain:</span></h4><p><span>Adaptive sampling is a technique in ray tracing that aims to improve rendering efficiency by allocating more samples to pixels where the image is more complex and fewer samples where the image is simpler. The complexity is determined by the variance within the pixel&#39;s sample colors; a high variance indicates complex features like edges or textures, while a low variance suggests flat, simple areas.</span></p><h4 id='implemention'><span>Implemention:</span></h4><ol><li><p><span>The loop starts by taking samples using </span><code>ns_aa</code><span>. For each sample, a ray is generated and traced, and the returned radiance is added to </span><code>color</code><span>.</span></p></li><li><p><span>As rays are sampled,  calculate the illumination </span><code>L.illum()</code><span> for each and maintains running sums </span><code>s1</code><span> for the mean and </span><code>s2</code><span> for the squared values to compute variance.</span></p></li><li><p><span>After each batch, compute the mean </span><code>mu</code><span> and variance </span><code>sigma2</code><span> of the illuminance values. It then calculates the confidence interval </span><code>I</code><span> based on these statistics.</span></p></li><li><p><span>Using the confidence interval </span><code>I</code><span> and a </span><code>maxTolerance</code><span> value (which controls how close the running average color must be to the true mean before stopping), the algorithm decides whether the current number of samples is sufficient. If the interval </span><code>I</code><span> is less than </span><code>maxTolerance</code><span> times the mean </span><code>mu</code><span>, the loop breaks early, meaning the algorithm has converged to a stable color estimate for that pixel.</span></p></li><li><p><span>Once the loop ends, either by reaching convergence or by hitting the maximum number of samples (</span><code>ns_aa</code><span>), the algorithm averages the accumulated color by the actual number of samples taken (</span><code>index</code><span>) and updates the pixel color in the </span><code>sampleBuffer</code><span>.</span></p></li><li><p><span>Finally, the number of samples that were actually used (</span><code>num_samples</code><span>) is recorded in the </span><code>sampleCountBuffer</code><span> for each pixel, providing data that could be used for analysis.</span></p></li></ol><h3 id='two-scenes-with-at-least-2048-samples-per-pixel'><span>Two scenes with at least 2048 samples per pixel. </span></h3><figure class='table-figure'><table><thead><tr><th><img src="build/p5_1.png" referrerpolicy="no-referrer" alt="img"><span>Rendered image.    </span></th><th><img src="build/P5_2.png" referrerpolicy="no-referrer" alt="img"><span>Sample rate image</span></th></tr></thead><tbody><tr><td><img src="build/p5_3.png" referrerpolicy="no-referrer" alt="img"><span>Rendered image </span></td><td><img src="build/p5_4.png" referrerpolicy="no-referrer" alt="img"><span>Sample rate image </span></td></tr></tbody></table></figure><p><span>It can be seen from the sample rate image that those area with shadows and complex geometries will need a higher sample rate to avoid noise.</span></p></div></div>
+</body>
 </html>
