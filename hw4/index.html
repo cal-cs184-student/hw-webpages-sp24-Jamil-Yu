@@ -1,7 +1,534 @@
+<!doctype html>
 <html>
-	<head>
-	</head>
-	<body>
-		Homework 4 index.html here
-	</body>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+html {
+	font-size: 19px;
+}
+
+html, body {
+	margin: auto;
+	background: #fefefe;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	font-family: "Vollkorn", Palatino, Times;
+	color: #333;
+	line-height: 1.4;
+	text-align: justify;
+}
+
+#write {
+	max-width: 960px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	line-height: 1.53;
+	padding-top: 40px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1100px;
+	}
+}
+
+@media print {
+	html {
+		font-size: 13px;
+	}
+}
+
+/* Typography
+-------------------------------------------------------- */
+
+#write>h1:first-child,
+h1 {
+	margin-top: 1.6em;
+	font-weight: normal;
+}
+
+h1 {
+	font-size:3em;
+}
+
+h2 {
+	margin-top:2em;
+	font-weight: normal;
+}
+
+h3 {
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 3em;
+}
+
+h1, 
+h2, 
+h3{
+	text-align: center;
+}
+
+h2:after{
+	border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+}
+
+h1+h2, h2+h3 {
+	margin-top: 0.83em;
+}
+
+p,
+.mathjax-block {
+	margin-top: 0;
+	-webkit-hypens: auto;
+	-moz-hypens: auto;
+	hyphens: auto;
+}
+ul {
+	list-style: square;
+	padding-left: 1.2em;
+}
+ol {
+	padding-left: 1.2em;
+}
+
+@media print {
+	ol {
+		padding-left: 40px;
+	}
+}
+
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+}
+code,
+pre {
+	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-size: .9em;
+	background: white;
+}
+.md-fences{
+	margin-left: 1em;
+	padding-left: 1em;
+	border: 1px solid #ddd;
+	padding-bottom: 8px;
+	padding-top: 6px;
+	margin-bottom: 1.5em;
+}
+
+a {
+	color: #2484c1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+h1 a,
+h1 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+hr {
+	color: #ddd;
+	height: 1px;
+	margin: 2em 0;
+	border-top: solid 1px #ddd;
+	border-bottom: none;
+	border-left: 0;
+	border-right: 0;
+}
+.ty-table-edit {
+	background: #ededed;
+    padding-top: 4px;
+}
+table {
+	margin-bottom: 1.333333rem
+}
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.333333rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+table th {
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+
+.task-list{
+	padding:0;
+}
+
+.md-task-list-item {
+	padding-left: 1.6rem;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.33333333rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #fefefe;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+.md-tag {
+	color: inherit;
+	font: inherit;
+}
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+}
+#write pre.md-meta-block {
+	white-space: pre;
+	background: #f8f8f8;
+	border: 0px;
+	color: #999;
+	
+	width: 100vw;
+	max-width: calc(100% + 60px);
+	margin-left: -30px;
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
+
+	margin-bottom: 2em;
+	margin-top: -1.3333333333333rem;
+	padding-top: 26px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
+	font-size: 0.9em;
+	font-size: 0.76em;
+	padding-left: 0;
+}
+.md-img-error.md-image>.md-meta{
+	vertical-align: bottom;
+}
+#write>h5.md-focus:before {
+	top: 2px;
+}
+
+.md-toc {
+	margin-top: 40px;
+}
+
+.md-toc-content {
+	padding-bottom: 20px;
+}
+
+.outline-expander:before {
+	color: inherit;
+	font-size: 14px;
+	top: auto;
+	content: "\f0da";
+	font-family: FontAwesome;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  	content: "\f0d7";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: #6A6A6A;
+}
+
+.html-for-mac #typora-sidebar {
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #428bca;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #777777;
+}
+
+.typora-node .file-list-item-parent-loc, 
+.typora-node .file-list-item-time, 
+.typora-node .file-list-item-summary {
+	font-family: arial, sans-serif;
+}
+
+.md-task-list-item>input {
+    margin-left: -1.3em;
+    margin-top: calc(1rem - 12px);
+}
+
+.md-mathjax-midline {
+	background: #fafafa;
+}
+
+.md-fences .code-tooltip {
+	bottom: -2em !important;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>CS 184 Computer Graphics and Imaging, Spring 2024</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''>  <h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2023</h1>
+  <h1 align="middle">Project 4: Cloth Simulator</h1>
+  <h2 align="middle">JIAN YU, XIAOYU ZHU</h2>  <div>
+    <h2 align="middle">Overview</h2>
+    <p>In Project 4 of CS 184, we created a realistic cloth simulator. Our implementation involved constructing a mesh of interconnected point masses, handling collisions with spheres and planes, and preventing self-collisions for a natural draping effect. Using shaders, we achieved realistic rendering under various lighting conditions.  </p>
+  </div>
+  <h2 align="middle">Part 1: Masses and springs</h2><ul><li><h4 id='overview-of-implemention'><span>Overview of implemention:</span></h4><ol start='' ><li><p><strong><span>Grid Generation</span></strong></p><ul><li><p><span>Create a grid of point masses with dimensions </span><code>num_width_points</code><span> by </span><code>num_height_points</code><span>, representing the width and height of the cloth.</span></p></li><li><p><span>Orientation:</span></p><ul><li><p><strong><span>HORIZONTAL:</span></strong><span> Set all masses&#39; y-coordinate to 1. Evenly distribute them across the xz-plane, starting at (0, 0) for the top-left mass and ending at (</span><code>width</code><span>,</span><code>height</code><span>) for the bottom-right mass.</span></p></li><li><p><strong><span>VERTICAL:</span></strong><span> Introduce a small random z-offset (-1/1000 to 1/1000) for each mass. Evenly distribute them across the xy-plane.</span></p></li></ul></li><li><p><span>Pinning:</span></p><ul><li><p><span>Iterate through the </span><code>pinned</code><span> vector. If a mass&#39;s (x, y) index matches an entry in </span><code>pinned</code><span>, set its </span><code>pinned</code><span> boolean to </span><code>true</code><span>.</span></p></li></ul></li><li><p><strong><span>Storage:</span></strong><span> Add the point masses to the </span><code>point_masses</code><span> vector in row-major (x-axis) order.</span></p></li></ul></li><li><p><strong><span>Spring Connections</span></strong></p><ul><li><p><strong><span>Structural:</span></strong><span> Connect each mass to its adjacent neighbor to the left and to the one directly above it with structural springs.</span></p></li><li><p><strong><span>Shearing:</span></strong><span> Connect each mass to its diagonally upper-left and upper-right neighbors with shearing springs.</span></p></li><li><p><strong><span>Bending:</span></strong><span> Connect each mass to the mass two positions to its left and the mass two positions above it, using bending springs.</span></p></li><li><p><span>for three kinds of  connections listed above, if the point is on the edge, skip it.</span></p></li></ul></li></ol><p>&nbsp;</p><figure class='table-figure'><table><thead><tr><th><span>Screenshots of pinned2.json</span></th></tr></thead><tbody><tr><td><img src="img/q1_1.png" referrerpolicy="no-referrer"><span>with all constraints</span></td></tr><tr><td><img src="img/q1_2.png" referrerpolicy="no-referrer"><span>without shearing constraints</span></td></tr><tr><td><img src="img/q1_3.png" referrerpolicy="no-referrer"></td></tr><tr><td><span>with only shearing constraint</span></td></tr><tr><td>&nbsp;</td></tr></tbody></table></figure><h2 align="middle">Part 2: Simulation via numerical integration</h2></li></ul><h4 id='comparison-image-with-low-and-high-ks'><span>Comparison image with low and high ks:</span></h4><figure class='table-figure'><table><thead><tr><th><span>low ks(1e-05)</span></th><th><span>high ks(1e05)</span></th></tr></thead><tbody><tr><td><img src="img/q2_1.png" referrerpolicy="no-referrer"></td><td><img src="img/q2_2.png" referrerpolicy="no-referrer"></td></tr></tbody></table></figure><ul><li><p><span>Explaination:</span></p><p><strong><span>ks</span></strong><span> represents the stiffness of the springs in the simulation, governing the elasticity and deformability of the cloth.</span></p><p><strong><span>Low ks:</span></strong></p><ul><li><p><span>The cloth becomes loose and easily stretches and deforms. External forces like gravity cause significant deformation, with the cloth drooping considerably.</span></p></li><li><p><span>The cloth takes longer to settle, exhibiting noticeable oscillations that take time to dampen.</span></p></li></ul><p><strong><span>High ks:</span></strong></p><ul><li><p><span>The cloth becomes stiff, rigid, and resists deformation strongly. Sagging is reduced, and the cloth maintains its shape better.</span></p></li><li><p><span>The cloth settles much faster, with minimal oscillations.</span></p></li></ul></li></ul><h4 id='comparison-image-with-low-and-high-density'><span>Comparison image with low and high density:</span></h4><figure class='table-figure'><table><thead><tr><th><span>low density(1)</span></th><th><span>high density(10000)</span></th></tr></thead><tbody><tr><td><img src="img/q2_4.png" referrerpolicy="no-referrer"></td><td><img src="img/q2_3.png" referrerpolicy="no-referrer"></td></tr></tbody></table></figure><ul><li><p><span>Explaination:</span></p><p><span>Density determines the mass per unit volume of the cloth. In the simulation, it directly affects how much each point mass weighs.</span></p><p><strong><span>Low Density</span></strong></p><ul><li><p><strong><span>Lightweight:</span></strong><span> The cloth behaves as if made from a very light, thin material.</span></p></li><li><p><strong><span>Fluttering and Air Resistance:</span></strong><span> The cloth is easily affected by forces like wind, leading to fluttering and pronounced reactions to air resistance.</span></p></li><li><p><strong><span>Faster Movement:</span></strong><span> The cloth accelerates and moves faster in response to forces because it has less inertia.</span></p></li><li><p><strong><span>Quick Settling:</span></strong><span> After disturbances, a low-density cloth tends to settle more quickly.</span></p></li></ul><p><strong><span>High Density</span></strong></p><ul><li><p><strong><span>Heavyweight:</span></strong><span> The cloth behaves as if made from a dense, thick fabric.</span></p></li><li><p><strong><span>Less Flutter; More Draping:</span></strong><span> Wind and air resistance have less noticeable effects. The cloth tends to drape more heavily under gravity.</span></p></li><li><p><strong><span>Slower Movement:</span></strong><span> The increased inertia makes the cloth move more slowly in response to forces.</span></p></li><li><p><strong><span>Longer Settling Time:</span></strong><span> A high-density cloth will take longer to come to rest after being disturbed.</span></p></li></ul></li></ul><h4 id='comparison-image-with-low-and-high-damping'><span>Comparison image with low and high damping:</span></h4><figure class='table-figure'><table><thead><tr><th><span>low damping(0)</span></th><th><span>high damping(1)</span></th></tr></thead><tbody><tr><td><img src="img/q2_5.png" referrerpolicy="no-referrer"></td><td><img src="img/q2_6.png" referrerpolicy="no-referrer"></td></tr></tbody></table></figure><ul><li><p><span>Explaination:</span></p><p><span>Damping is a force that opposes the velocity of an object, acting to slow it down. In cloth simulations, damping simulates energy loss due to internal friction within the fabric and air resistance.</span></p><ul><li><p><strong><span>Low Damping:</span></strong><span> Cloth will oscillate for a long time, exhibiting a springy and lively behavior.</span></p></li><li><p><strong><span>High Damping:</span></strong><span> Cloth settles quickly and oscillations damp out fast, leading to a less bouncy and more stable appearance. Excessive damping can make the cloth appear overly stiff and unrealistic. Also, high damping can make the cloth feel less responsive and sluggish, as it reacts slowly to external forces.</span></p></li></ul></li></ul><h4 id='images-of-default-state'><span>Images of default state</span></h4><p><img src="img/q2_7.png" referrerpolicy="no-referrer"></p><h2 align="middle">Part 3: Handling collisions with other objects</h2><ul><li><h4 id='overview-of-implemention-2'><span>Overview of implemention</span></h4><ul><li><p><span>In the </span><code>Sphere::collide</code><span> function:</span></p><ol start='' ><li><p><strong><span>Distance Check:</span></strong><span> Determine if the distance between the point mass and the sphere center is less than the sphere radius.</span></p></li><li><p><strong><span>Tangent Point Calculation:</span></strong><span> If the point mass is inside the sphere, calculate the intersection point between the line connecting the point mass&#39;s last position and the sphere center and the sphere surface.</span></p></li><li><p><strong><span>Position Correction:</span></strong><span> Move the point mass&#39;s last position towards the tangent point and scale the displacement by the friction coefficient.</span></p></li><li><p><strong><span>Position Update:</span></strong><span> Set the point mass&#39;s new position to the corrected position.</span></p></li></ol></li><li><p><span>In the </span><code>Cloth::simulate</code><span> function, iterate over all point masses and perform collision detection between each point mass and all spheres.</span></p></li></ul></li></ul><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>cloth on sphere with different ks(500,5000,50000)</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><img src="img/q3_2.png" style="zoom:50%;" /></td></tr><tr><td style='text-align:center;' ><img src="img/q3_1.png" style="zoom:50%;" /></td></tr><tr><td style='text-align:center;' ><img src="img/q3_3.png" style="zoom:50%;" /></td></tr></tbody></table></figure><ul><li><p><span>Discreption：</span></p><ul><li><p><strong><span>A smaller ks value</span></strong><span> indicates weaker springs, making the cloth more easily stretched or compressed. This means the cloth will be more influenced by gravity and other external forces, resulting in closer draping against the sphere.</span></p></li><li><p><strong><span>A larger ks value</span></strong><span> corresponds to stiffer springs, making the cloth harder to stretch or compress. This translates to a more rigid and supportive cloth that tends to retain its shape.</span></p></li></ul></li><li><h4 id='plane-collision'><span>plane collision:</span></h4><p><img src="img/q3_4.png" style="zoom:50%;" /></p><h2 align="middle">Part 4: Handling self-collisions</h2></li></ul><h4 id='screenshot-of-falling-cloth'><span>Screenshot of falling cloth</span></h4><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><img src="img/q4_1.png" /></th><th><img src="img/q4_2.png" /></th><th><img src="img/q4_3.png" /></th></tr></thead><tbody></tbody></table></figure><h4 id='screenshot-of-falling-and-rest-state-with-different-ks-and-density'><span>Screenshot of falling and rest state with different ks and density</span></h4><figure class='table-figure'><table><thead><tr><th><span>ks = 5000, d = 1</span></th><th><img src="img/q4_4.png" /></th><th><img src="img/q4_5.png" /></th></tr></thead><tbody><tr><td><span>ks = 5000, d = 100</span></td><td><img src="img/q4_6.png" /></td><td><img src="img/q4_7.png" /></td></tr><tr><td><span>ks = 75000, d = 15</span></td><td><img src="img/q4_8.png" /></td><td><img src="img/q4_9.png" /></td></tr><tr><td><span>ks = 10, d = 15</span></td><td><img src="img/q4_10.png" /></td><td><img src="img/q4_11.png" /></td></tr><tr><td><span>ks = 5e+6, d = 100</span></td><td><img src="img/q4_12.jpg" /></td><td><img src="img/q4_13.jpg" /></td></tr></tbody></table></figure><p><strong><span>Density</span></strong></p><ul><li><p><strong><span>Low Density:</span></strong><span> Lightweight, thin fabric, like silk scarf. Flutters more easily, and folds tend to be less pronounced. The cloth collapses on itself in a looser, more spread-out manner.</span></p></li><li><p><strong><span>High Density:</span></strong><span> Heavier, thicker fabric, like a  blanket. Drapes heavily, and folds are more distinct and weighty. The cloth will pile up more readily, creating denser, overlapping sections.</span></p></li></ul><p><strong><span>Spring Constant (ks)</span></strong></p><ul><li><p><strong><span>Low ks:</span></strong><span> Soft, stretchy fabric. The cloth easily compresses and forms loose, flowing folds. The overall draping will be less rigid, allowing the cloth to conform and pile up easily.</span></p></li><li><p><strong><span>High ks</span></strong><span>: Stiff, less elastic fabric. The cloth resists folding tightly and will tend to maintain larger, more open folds with less compression where it overlaps itself.</span></p></li></ul><p><strong><span>Combined Effects</span></strong></p><figure class='table-figure'><table><thead><tr><th style='text-align:left;' ><span>Low</span></th><th style='text-align:left;' ><span>Low</span></th><th style='text-align:left;' ><span>Very soft flowing fabric, collapses readily, loose folds.</span></th></tr></thead><tbody><tr><td style='text-align:left;' ><span>Density</span></td><td style='text-align:left;' ><span>ks</span></td><td style='text-align:left;' ><span>Behavior</span></td></tr><tr><td style='text-align:left;' ><span>Low</span></td><td style='text-align:left;' ><span>High</span></td><td style='text-align:left;' ><span>Lightweight, but less elastic. Forms more open folds.</span></td></tr><tr><td style='text-align:left;' ><span>High</span></td><td style='text-align:left;' ><span>Low</span></td><td style='text-align:left;' ><span>Heavy fabric that stretches and compresses easily. Thick, bunched up folds.</span></td></tr><tr><td style='text-align:left;' ><span>High</span></td><td style='text-align:left;' ><span>High</span></td><td style='text-align:left;' ><span>Stiff and heavy, drapes in large open folds, minimal collapse on itself.</span></td></tr></tbody></table></figure><p><span>An additional observation is that when ks and density change proportionally at the same time, the behavior of the cloth is very similar.  We believe the reason is that the main force determining the shape of the cloth is the internal elastic force, rather than gravity or other external forces. Force affects the motion behavior of an object by affecting its acceleration. When ks and density change proportionally, their effects on acceleration cancel each other out, resulting in similar behavior of the cloth. We have confirmed that the images are not misplaced, they are indeed very similar :)</span></p>  <h2 align="middle">Part 5: shaders</h2><h4 id='shader-description'><span>Shader description</span></h4><p><span>A shader program is a piece of code written in a specialized shading language, like GLSL  that runs on the GPU . Its purpose is to determine how each pixel (fragment) or vertex of a 3D object should be rendered on the screen.</span></p><p><span>Vertex shaders are responsible for processing each vertex of a 3D object. They manipulate the position, color, texture coordinates, and other properties of vertices. For instance, they can transform the 3D coordinates of vertices into 2D screen coordinates for rendering on the screen. They can also calculate lighting effects at each vertex.</span></p><p><span>Fragment shaders, also known as pixel shaders, operate on individual pixels of the rendered image. They determine the final color of each pixel based on various factors such as lighting, textures, and material properties. Fragment shaders calculate the final color by interpolating values from the vertices, applying lighting calculations, texture sampling, and other effects.</span></p><p><span>Together, vertex and fragment shaders form the core of the rendering process. Vertex shaders prepare the geometry for rendering by transforming vertices, while fragment shaders determine the final appearance of each pixel on the screen by calculating lighting and material effects. By working together, they enable the GPU to efficiently render complex 3D scenes with realistic lighting and materials.</span></p><h4 id='explaination-of-blinn-phong-model'><span>Explaination of Blinn-Phong model</span></h4><p><span>In Blinn-Phong shading, each pixel&#39;s color is determined by considering three main components: ambient, diffuse, and specular lighting.</span></p><ul><li><p><span>Ambient lighting represents the general illumination in a scene and is constant across all surfaces. It adds a base level of brightness to objects, regardless of their orientation or shape.</span></p></li><li><p><span>Diffuse lighting simulates the way light scatters when it hits a surface. It depends on the angle between the light source and the surface normal, resulting in brighter areas where the surface faces the light directly and darker areas where it faces away.</span></p></li><li><p><span>Specular lighting accounts for the reflection of light off shiny surfaces. It creates bright highlights on surfaces, with the intensity and size of the highlights varying based on the viewing angle and surface roughness.</span></p></li></ul><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><img src="img/q5_1.jpg" /></th><th><img src="img/q5_2.jpg"  /></th></tr></thead><tbody><tr><td style='text-align:center;' ><img src="img/q5_3.jpg"  /></td><td><img src="img/q5_4.jpg"  /></td></tr></tbody></table></figure><h4 id='texture-mapping-shader'><span>Texture mapping shader</span></h4><p><span>It&#39;s a photo of us during spring break haha:)</span></p><figure class='table-figure'><table><thead><tr><th><img src="img/q5_5.jpg"  /></th><th><img src="img/q5_6.jpg"  /></th></tr></thead><tbody></tbody></table></figure><h4 id='bump-mapping-screenshotsusing-texture3-provided'><span>Bump mapping screenshots(using texture_3 provided)</span></h4><figure class='table-figure'><table><thead><tr><th><img src="img/q5_8.jpg"  /></th><th><img src="img/q5_7.jpg"  /></th></tr></thead><tbody></tbody></table></figure><h4 id='displacement-mapping-on-sphere'><span>Displacement mapping on sphere:</span></h4><p><img src="img/q5_9.jpg" style="zoom:33%;" /></p><ul><li><p><span>comparison on resulting renders:</span></p><p><span>Bump mapping simulates surface irregularities through shading, without changing geometry. Displacement mapping alters geometry based on a texture map. Bump mapping is computationally lighter but less realistic, while displacement mapping is more realistic but computationally heavier.</span></p></li></ul><h4 id='comparison-of-bumpdisplacement-coarseness'><span>Comparison of Bump/Displacement coarseness</span></h4><figure class='table-figure'><table><thead><tr><th><img src="img/q5_10.jpg"  /></th><th><img src="img/q5_11.jpg"  /></th></tr></thead><tbody><tr><td><img src="img/q5_12.jpg"  /></td><td><img src="img/q5_13.jpg"  /></td></tr><tr><td><span>-o 16 -a 16</span></td><td><span>-o 128 -a 128</span></td></tr></tbody></table></figure><ul><li><p><span>Comparison:</span></p><p><span>When changing the coarseness of the sphere mesh, Bump Mapping won&#39;t be affected because it only simulates surface irregularities through shading and doesn&#39;t involve changes in geometry. The surface details generated by Bump Mapping will remain consistent regardless of the mesh&#39;s coarseness.</span></p><p><span>However, Displacement Mapping will be affected. Using a coarser mesh (</span><code>-o 16 -a 16</code><span>) will result in fewer and less pronounced surface details because of the limited changes in geometry. On the other hand, using a finer mesh (</span><code>-o 128 -a 128</code><span>) will produce more and more pronounced surface details as more vertices are displaced to match the texture&#39;s intricacies.</span></p></li></ul><h4 id='mirror-shader-on-cloth-and-sphere'><span>Mirror shader on cloth and sphere</span></h4><figure class='table-figure'><table><thead><tr><th><img src="img/q5_15.jpg"  /></th><th><img src="img/q5_14.jpg"  /></th></tr></thead><tbody></tbody></table></figure></div></div>
+</body>
 </html>
